@@ -1,0 +1,328 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway;
+    font-weight: 300;
+    color: #333;
+}
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.menu {
+    position: fixed;
+    right: -300px;
+    width: 360px;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: left;
+}
+.menu.menu-open {
+    right: 0;
+}
+.menu-wrap {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    background: #1a1a1a;
+    width: 300px;
+    height: 100%}
+.menu h1.logo a {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .15em;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+}
+.menu h1.logo a:hover {
+    color: #1abc9c;
+}
+.menu img.logo {
+    margin: 20px 0;
+    max-width: 160px;
+}
+.menu a {
+    margin-left: 20px;
+    color: gray;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.menu a.Menu {
+    margin-left: 20px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.menu a.SubMenu {
+    margin-left: 35px;
+    color: gray;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:active {
+    color: #fff;
+}
+.menu a>i {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 25px;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 25px 2px;
+}
+.menu-close {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    color: gray;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 20px;
+    right: 5px;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.menu-close:hover {
+    color: #fff;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.menu-by {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    font-size: 1px;
+    color: gray;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 671px;
+    right: 10px;
+    color: #fff;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.menu-by:hover {
+    color: #5893d6;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+#ToggleMenu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 11;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .25);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+#ToggleMenu:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+#headercomplete {
+    background: url(../img/header-a.jpg) no-repeat center top;
+    margin-top: 0px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 100%;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#headercomplete h1 {
+    margin-top: 130px;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#headercomplete h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#headercomplete i {
+    font-size: 35px;
+    color: #fff;
+}
+#headercomplete .spacer {
+    margin-top: 220px;
+}
+#headercomplete .spacer-1 {
+    margin-top: 50px;
+}
+#headercomplete .spacer-2 {
+    margin-top: 100px;
+}
+#headercomplete .spacer-3 {
+    margin-top: 150px;
+}
+#headercomplete .spacer-4 {
+    margin-top: 200px;
+}
+section#footer .social a i {
+  color: #5d5d5d;
+  color: rgba(255,255,255,0.2);
+}
+section#footer .social a:hover {
+  color: #fff;
+}
+section#footer .social a:hover i {
+  color: #fff;
+}
+section#footer a > img {
+  width: 100px;
+}
+section#footer .social {
+  display: block;
+  margin-top: 30px;
+}
+section#footer .social a {
+  margin: 0 8px;
+  padding: 1px;
+}
+section#footer .social a i {
+  width: 1em;
+}
+section#footer .credits a {
+  color: #5893d6;
+  font-weight: bold;
+}
+section#footer .credits a:hover {
+  text-decoration: none;
+}
+section#footer .credits p {
+  color: #fff;
+  font-weight: bold; 
+  font-size: 20px;
+}
+section#footer .credits i {
+  color: #fff;
+  font-size: 14px;
+}
+section#footer .credits i .bitch {
+  color: #ff3232; /* Old browsers */
+  color: -moz-linear-gradient(45deg, #ff3232 0%, #ff3030 50%, #ff2828 51%, #ff8989 100%); /* FF3.6+ */
+  color: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ff3232), color-stop(50%,#ff3030), color-stop(51%,#ff2828), color-stop(100%,#ff8989)); /* Chrome,Safari4+ */
+  color: -webkit-linear-gradient(45deg, #ff3232 0%,#ff3030 50%,#ff2828 51%,#ff8989 100%); /* Chrome10+,Safari5.1+ */
+  color: -o-linear-gradient(45deg, #ff3232 0%,#ff3030 50%,#ff2828 51%,#ff8989 100%); /* Opera 11.10+ */
+  color: -ms-linear-gradient(45deg, #ff3232 0%,#ff3030 50%,#ff2828 51%,#ff8989 100%); /* IE10+ */
+  color: linear-gradient(45deg, #ff3232 0%,#ff3030 50%,#ff2828 51%,#ff8989 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#ff8989',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  font-size: 14px;
+}
+section#footer{
+    padding: 88px;
+}
+
+
+.buttoms-form a {
+    text-decoration: none;
+}
+
+.recover a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.recover a:hover {
+    text-decoration: none;
+    color: #039000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .pepe {
+    left: 50px;
+}
